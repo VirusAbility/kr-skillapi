@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+	<meta charset="UTF-8"/>
+	<title>Skill API - Korean</title>
+	
+	<!-- other scripts are loaded in main.js -->
+	<script src="editor/js/loader.js"></script>
+	<script src="editor/js/main.js"></script>
+	
+	<link rel="stylesheet" href="editor/builderStyle.css" />
+	<link rel="stylesheet" href="editor/style.css" />
+    <link rel="stylesheet" href="editor/tooltips.css" />
+	
+</head>
+
+<body>
+
+	<!-- Site header -->
+	<header>
+		<h1>Skill API</h1>
+		<h2>에디터 | 한국어</h2>
+	</header>
+
+	<div id="version">
+		<label for="version-select">
+			서버 버전
+		</label>
+		<select id="version-select">
+			<option>1.13</option>
+			<option>1.12</option>
+			<option>1.11</option>
+			<option>1.10</option>
+			<option>1.9</option>
+			<option>1.8</option>
+			<option>1.7</option>
+		</select>
+	</div>
+	
+	<!-- IO Buttons -->
+	<div id="io">
+		<p class="ioText">Drop file anywhere to load</p>
+		<button id="saveButton" class="ioButton">데이터 백업</button>
+	</div>
+	
+	<!-- Display when the window is too small -->
+	<div id="small">
+		<p>브라우저를 확장시켜 주세요</p>
+	</div>
+	
+	<div id="main">
+		
+		<!-- Skill/Class Tabs -->
+		<div id="tabSpacer"></div>
+		<div id="skillTab" class="tab tabLeft tabActive">
+			스킬 관리
+		</div>
+		<div  id="classTab" class="tab tabRight">
+			직업 관리
+		</div>
+		
+		<!-- Skill Content -->
+		<div id="skills">
+			
+			<!-- Skill list -->
+			<select id="skillList" size="30">
+				<option selected="selected">스킬 1</option>
+				<option>+ 스킬 생성</option>
+			</select>
+			
+			<!-- Effect builder -->
+			<div id="builder">
+				<h6 id="skillDetails">세부설정</h6>
+				<h6 id="addTrigger">트리거</h6>
+				<h6 id="saveSkill" class>스킬 저장</h6>
+				<h6 id="deleteSkill" class="cancelButton">스킬 제거</h6>
+				<div id="builderContent"></div>
+			</div>
+			
+			<!-- Component editor -->
+			<div id="skillForm">
+			</div>
+			
+			<!-- Trigger selection -->
+			<div id="triggerChooser">
+				<h4>Triggers</h4>
+				
+				<div id="triggerOptions"></div>
+				
+				<h5 class="cancelButton">취소</h5>
+			</div>
+			
+			<!-- Component selection -->
+			<div id="componentChooser">
+			
+				<h4>Targets</h4>
+				<div id="targetOptions"></div>
+				
+				<h4>Conditions</h4>
+				<div id="conditionOptions"></div>
+				
+				<h4>Mechanics</h4>
+				<div id="mechanicOptions"></div>
+				
+				<hr/>
+				<h5 class="cancelButton">취소</h5>
+				
+			</div>
+		</div>
+		
+		<!-- Class Content -->
+		<div id="classes">
+		
+			<!-- Class list -->
+			<select id="classList" size="30">
+				<option selected="selected">직업 1</option>
+				<option>+ 직업 생성</option>
+			</select>
+			
+			<div id="classForm"></div>
+		</div>
+		
+	</div>
+	
+	<!-- Site footer -->
+	<footer>
+		<a id="bukkit" href="https://www.spigotmc.org/resources/skillapi.4824/" target="_blank">Spigot</a>
+		<a id="profile" href="https://github.com/Eniripsa96/SkillAPI/wiki" target="_blank">Wiki</a>
+		<a id="source" href="https://github.com/Eniripsa96/SkillAPI/tree/master/editor" target="_blank">Source Code</a>
+        <a id="irc" href="https://discord.gg/KX2ygZJ" target="_blank">Discord</a>
+	</footer>
+   
+    <div id="badBrowser">
+        <p>크롬이나 파이어폭스로 실행시켜주세요.</p>
+    </div>
+</body>
+
+</html>
