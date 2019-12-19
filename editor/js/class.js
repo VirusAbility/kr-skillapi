@@ -31,8 +31,8 @@ function Class(name)
 		new StringListValue('직업 설명', 'icon-lore', [
 			'&d' + name
 		]),
-		new StringListValue('사용 금지 아이템', 'blacklist', [ ]).setTooltip('The types of items that the class cannot use (one per line)'),
-		new StringValue('기본 액션바 설정', 'action-bar', '').setTooltip('The format for the action bar. Leave blank to use the default formatting.')
+		new StringListValue('사용 금지 아이템', 'blacklist', [ ]).setTooltip('해당 직업이 사용할 수 없는 아이템을 입력하세요( 한줄에 한개 )'),
+		new StringValue('기본 액션바 설정', 'action-bar', '').setTooltip('Actionbar 에 띄울 메세지를 설정합니다')
 	];
     
     this.updateAttribs(10);
