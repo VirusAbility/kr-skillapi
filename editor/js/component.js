@@ -27,37 +27,37 @@ var Type = {
  * Available triggers for activating skill effects
  */
 var Trigger = {
-    BLOCK_BREAK          : { name: 'Block Break',          container: true, construct: TriggerBlockBreak,        premium: true },
-    BLOCK_PLACE          : { name: 'Block Place',          container: true, construct: TriggerBlockPlace,        premium: true },
-    CAST                 : { name: 'Cast',                 container: true, construct: TriggerCast               },
+    BLOCK_BREAK          : { name: '블럭 파괴',          container: true, construct: TriggerBlockBreak,        premium: true },
+    BLOCK_PLACE          : { name: '블럭 설치',          container: true, construct: TriggerBlockPlace,        premium: true },
+    CAST                 : { name: '스킬 시전',                 container: true, construct: TriggerCast               },
     CLEANUP              : { name: 'Cleanup',              container: true, construct: TriggerCleanup            },
     CROUCH               : { name: 'Crouch',               container: true, construct: TriggerCrouch             },
-    DEATH                : { name: 'Death',                container: true, construct: TriggerDeath              },
-    ENVIRONMENT_DAMAGE   : { name: 'Environment Damage',   container: true, construct: TriggerEnvironmentDamage, premium: true },
+    DEATH                : { name: '사망',                container: true, construct: TriggerDeath              },
+    ENVIRONMENT_DAMAGE   : { name: '자연데미지',   container: true, construct: TriggerEnvironmentDamage, premium: true },
     INITIALIZE           : { name: 'Initialize',           container: true, construct: TriggerInitialize         },
-    KILL                 : { name: 'Kill',                 container: true, construct: TriggerKill               },
+    KILL                 : { name: '엔티티 살생',                 container: true, construct: TriggerKill               },
     LAND                 : { name: 'Land',                 container: true, construct: TriggerLand               },
     LAUNCH               : { name: 'Launch',               container: true, construct: TriggerLaunch             },
-    MOVE                 : { name: 'Move',                 container: true, construct: TriggerMove,              premium: true },
-    PHYSICAL_DAMAGE      : { name: 'Physical Damage',      container: true, construct: TriggerPhysicalDamage     },
-    SKILL_DAMAGE         : { name: 'Skill Damage',         container: true, construct: TriggerSkillDamage        },
-    TOOK_PHYSICAL_DAMAGE : { name: 'Took Physical Damage', container: true, construct: TriggerTookPhysicalDamage },
-    TOOK_SKILL_DAMAGE    : { name: 'Took Skill Damage',    container: true, construct: TriggerTookSkillDamage    }
+    MOVE                 : { name: '이동',                 container: true, construct: TriggerMove,              premium: true },
+    PHYSICAL_DAMAGE      : { name: '물리데미지',      container: true, construct: TriggerPhysicalDamage     },
+    SKILL_DAMAGE         : { name: '스킬데미지',         container: true, construct: TriggerSkillDamage        },
+    TOOK_PHYSICAL_DAMAGE : { name: '물리데미지 받았을때', container: true, construct: TriggerTookPhysicalDamage },
+    TOOK_SKILL_DAMAGE    : { name: '스킬데미지 받았을때',    container: true, construct: TriggerTookSkillDamage    }
 };
 
 /**
  * Available target component data
  */
 var Target = {
-    AREA     : { name: 'Area',     container: true, construct: TargetArea     },
+    AREA     : { name: '지역',     container: true, construct: TargetArea     },
     CONE     : { name: 'Cone',     container: true, construct: TargetCone     },
     LINEAR   : { name: 'Linear',   container: true, construct: TargetLinear   },
     LOCATION : { name: 'Location', container: true, construct: TargetLocation },
     NEAREST  : { name: 'Nearest',  container: true, construct: TargetNearest  },
     OFFSET   : { name: 'Offset',   container: true, construct: TargetOffset   },
     REMEMBER : { name: 'Remember', container: true, construct: TargetRemember },
-    SELF     : { name: 'Self',     container: true, construct: TargetSelf     },
-    SINGLE   : { name: 'Single',   container: true, construct: TargetSingle   }
+    SELF     : { name: '나',     container: true, construct: TargetSelf     },
+    SINGLE   : { name: '단일객체',   container: true, construct: TargetSingle   }
 };
 
 /**
