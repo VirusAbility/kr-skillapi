@@ -41,8 +41,8 @@ var Trigger = {
     MOVE                 : { name: '이동',                 container: true, construct: TriggerMove,              premium: true },
     PHYSICAL_DAMAGE      : { name: '물리데미지',      container: true, construct: TriggerPhysicalDamage     },
     SKILL_DAMAGE         : { name: '스킬데미지',         container: true, construct: TriggerSkillDamage        },
-    TOOK_PHYSICAL_DAMAGE : { name: '물리데미지 받았을때', container: true, construct: TriggerTookPhysicalDamage },
-    TOOK_SKILL_DAMAGE    : { name: '스킬데미지 받았을때',    container: true, construct: TriggerTookSkillDamage    }
+    TOOK_PHYSICAL_DAMAGE : { name: '물리데미지 피격', container: true, construct: TriggerTookPhysicalDamage },
+    TOOK_SKILL_DAMAGE    : { name: '스킬데미지 피격',    container: true, construct: TriggerTookSkillDamage    }
 };
 
 /**
@@ -81,23 +81,23 @@ var Condition = {
     FIRE:        { name: 'Fire',        container: true, construct: ConditionFire       },
     FLAG:        { name: 'Flag',        container: true, construct: ConditionFlag       },
     GROUND:      { name: 'Ground',      container: true, construct: ConditionGround,    premium: true },
-    HEALTH:      { name: 'Health',      container: true, construct: ConditionHealth     },
-    INVENTORY:   { name: 'Inventory',   container: true, construct: ConditionInventory  },
-    ITEM:        { name: 'Item',        container: true, construct: ConditionItem       },
-    LIGHT:       { name: 'Light',       container: true, construct: ConditionLight      },
-    MANA:        { name: 'Mana',        container: true, construct: ConditionMana       },
-    NAME:        { name: 'Name',        container: true, construct: ConditionName       },
-    OFFHAND:     { name: 'Offhand',     container: true, construct: ConditionOffhand    },
-    PERMISSION:  { name: 'Permission',  container: true, construct: ConditionPermission,premium: true },
-    POTION:      { name: 'Potion',      container: true, construct: ConditionPotion     },
-    SKILL_LEVEL: { name: 'Skill Level', container: true, construct: ConditionSkillLevel },
-    SLOT:        { name: 'Slot',        container: true, construct: ConditionSlot,      premium: true },
-    STATUS:      { name: 'Status',      container: true, construct: ConditionStatus     },
-    TIME:        { name: 'Time',        container: true, construct: ConditionTime       },
-    TOOL:        { name: 'Tool',        container: true, construct: ConditionTool       },
-    VALUE:       { name: 'Value',       container: true, construct: ConditionValue      },
-    WATER:       { name: 'Water',       container: true, construct: ConditionWater      },
-    WEATHER:     { name: 'Weather',     container: true, construct: ConditionWeather,   premium: true }
+    HEALTH:      { name: '체력',      container: true, construct: ConditionHealth     },
+    INVENTORY:   { name: '인벤토리',   container: true, construct: ConditionInventory  },
+    ITEM:        { name: '아이템',        container: true, construct: ConditionItem       },
+    LIGHT:       { name: '빛',       container: true, construct: ConditionLight      },
+    MANA:        { name: '마나',        container: true, construct: ConditionMana       },
+    NAME:        { name: '이름',        container: true, construct: ConditionName       },
+    OFFHAND:     { name: '보조 손',     container: true, construct: ConditionOffhand    },
+    PERMISSION:  { name: '권한',  container: true, construct: ConditionPermission,premium: true },
+    POTION:      { name: '포션',      container: true, construct: ConditionPotion     },
+    SKILL_LEVEL: { name: '스킬 레벨', container: true, construct: ConditionSkillLevel },
+    SLOT:        { name: '슬롯',        container: true, construct: ConditionSlot,      premium: true },
+    STATUS:      { name: '상태',      container: true, construct: ConditionStatus     },
+    TIME:        { name: '시간',        container: true, construct: ConditionTime       },
+    TOOL:        { name: '도구',        container: true, construct: ConditionTool       },
+    VALUE:       { name: '값',       container: true, construct: ConditionValue      },
+    WATER:       { name: '물',       container: true, construct: ConditionWater      },
+    WEATHER:     { name: '날씨',     container: true, construct: ConditionWeather,   premium: true }
 };
 
 /**
